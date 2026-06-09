@@ -34,10 +34,10 @@ struct SessionCard: View {
             }
 
             HStack(spacing: 8) {
-                Label(session.track.room, systemImage: "mappin.and.ellipse")
+                Label(session.room, systemImage: "mappin.and.ellipse")
                     .font(.caption.weight(.semibold))
-                ForEach(session.difficulties, id: \.rawValue) { difficulty in
-                    Text(difficulty.rawValue)
+                ForEach(session.categories.prefix(2), id: \.self) { category in
+                    Text(category)
                         .font(.caption.weight(.bold))
                         .padding(.horizontal, 8)
                         .padding(.vertical, 4)

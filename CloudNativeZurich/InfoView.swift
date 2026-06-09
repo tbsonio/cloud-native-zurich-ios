@@ -7,6 +7,7 @@ struct InfoView: View {
                 LabeledContent("Date", value: ConferenceData.eventDate)
                 LabeledContent("Venue", value: ConferenceData.venue)
                 LabeledContent("Tracks", value: "4")
+                LabeledContent("Schedule Source", value: "Sessionize API")
             }
             Section("Links") {
                 Link(destination: ConferenceData.sessionizeURL) {

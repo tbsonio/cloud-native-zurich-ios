@@ -1,31 +1,40 @@
 import SwiftUI
 
 struct AppRootView: View {
+    @StateObject private var store = SessionStore()
     @AppStorage("favoriteSessionIDs") private var favoriteSessionIDsData = Data()
     @State private var selectedTrack: Track? = nil
     @State private var searchText = ""
 
-    private var favoriteSessionIDs: Set<UUID> {
-        get { (try? JSONDecoder().decode(Set<UUID>.self, from: favoriteSessionIDsData)) ?? [] }
+    private var favoriteSessionIDs: Set<String> {
+        get { (try? JSONDecoder().decode(Set<String>.self, from: favoriteSessionIDsData)) ?? [] }
         nonmutating set { favoriteSessionIDsData = (try? JSONEncoder().encode(newValue)) ?? Data() }
     }
 
     var body: some View {
         TabView {
             NavigationStack {
-                ScheduleView(selectedTrack: $selectedTrack, searchText: $searchText, favoriteSessionIDs: favoriteSessionIDs, toggleFavorite: toggleFavorite)
+                ScheduleView(
+                    sessions: store.sessions,
+                    isLoading: store.isLoading,
+                    errorMessage: store.errorMessage,
+                    selectedTrack: $selectedTrack,
+                    searchText: $searchText,
+                    favoriteSessionIDs: favoriteSessionIDs,
+                    toggleFavorite: toggleFavorite
+                )
                     .navigationTitle("Schedule")
             }
             .tabItem { Label("Schedule", systemImage: "calendar") }
 
             NavigationStack {
-                FavoritesView(favoriteSessionIDs: favoriteSessionIDs, toggleFavorite: toggleFavorite)
+                FavoritesView(sessions: store.sessions, favoriteSessionIDs: favoriteSessionIDs, toggleFavorite: toggleFavorite)
                     .navigationTitle("Favorites")
             }
             .tabItem { Label("Favorites", systemImage: "star") }
 
             NavigationStack {
-                SpeakersView()
+                SpeakersView(speakers: store.speakers, isLoading: store.isLoading)
                     .navigationTitle("Speakers")
             }
             .tabItem { Label("Speakers", systemImage: "person.2") }
@@ -37,6 +46,7 @@ struct AppRootView: View {
             .tabItem { Label("Info", systemImage: "info.circle") }
         }
         .tint(Theme.ink)
+        .task { await store.load() }
     }
 
     private func toggleFavorite(_ session: Session) {

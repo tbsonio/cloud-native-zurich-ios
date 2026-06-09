@@ -10,48 +10,77 @@ enum Track: String, CaseIterable, Identifiable, Codable {
 
     var room: String {
         switch self {
-        case .mainTrack1: "ABATON B"
-        case .mainTrack2: "ABATON A"
-        case .sovereignty: "ABATON 4"
-        case .sponsor: "ABATON 3"
+        case .mainTrack1: "Abaton B"
+        case .mainTrack2: "Abaton A"
+        case .sovereignty: "Abaton 4"
+        case .sponsor: "Abaton 3"
         }
+    }
+
+    static func from(room: String) -> Track {
+        if room.localizedCaseInsensitiveContains("Abaton A") { return .mainTrack2 }
+        if room.localizedCaseInsensitiveContains("Abaton 4") { return .sovereignty }
+        if room.localizedCaseInsensitiveContains("Sponsor") || room.localizedCaseInsensitiveContains("Abaton 3") { return .sponsor }
+        return .mainTrack1
     }
 }
 
-enum Difficulty: String, Codable {
-    case beginner = "Beginner"
-    case intermediate = "Intermediate"
-    case sponsorTalk = "Sponsor Talk"
+struct SpeakerLink: Hashable, Codable {
+    let title: String
+    let url: URL?
 }
 
 struct Speaker: Identifiable, Hashable, Codable {
-    let id: UUID
+    let id: String
     let name: String
+    let tagline: String
+    let bio: String
     let imageURL: URL?
+    let links: [SpeakerLink]
 }
 
 struct Session: Identifiable, Hashable, Codable {
-    let id: UUID
+    let id: String
     let title: String
-    let start: DateComponents
+    let startsAt: Date
+    let endsAt: Date
     let durationMinutes: Int
     let track: Track
+    let room: String
     let speakers: [Speaker]
-    let difficulties: [Difficulty]
+    let categories: [String]
     let summary: String
+    let isServiceSession: Bool
+    let liveURL: URL?
+    let recordingURL: URL?
 
     var timeRange: String {
-        guard let hour = start.hour, let minute = start.minute else { return "" }
-        let totalStart = hour * 60 + minute
-        let totalEnd = totalStart + durationMinutes
-        return "\(Self.format(minutes: totalStart)) - \(Self.format(minutes: totalEnd))"
+        "\(Self.timeFormatter.string(from: startsAt)) - \(Self.timeFormatter.string(from: endsAt))"
     }
 
     var speakerLine: String {
         speakers.map(\.name).joined(separator: ", ")
     }
 
-    private static func format(minutes: Int) -> String {
-        String(format: "%02d:%02d", minutes / 60, minutes % 60)
+    private static let timeFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "HH:mm"
+        return formatter
+    }()
+}
+
+extension DateFormatter {
+    static let sessionizeLocalDateTime: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        return formatter
+    }()
+}
+
+extension Date {
+    static func sessionize(_ value: String) -> Date {
+        DateFormatter.sessionizeLocalDateTime.date(from: value) ?? .distantPast
     }
 }

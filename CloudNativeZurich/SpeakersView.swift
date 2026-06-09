@@ -1,11 +1,20 @@
 import SwiftUI
 
 struct SpeakersView: View {
+    let speakers: [Speaker]
+    let isLoading: Bool
+
     var body: some View {
-        List(ConferenceData.speakers) { speaker in
-            SpeakerRow(speaker: speaker)
+        Group {
+            if isLoading && speakers.isEmpty {
+                ProgressView("Loading speakers...")
+            } else {
+                List(speakers) { speaker in
+                    SpeakerRow(speaker: speaker)
+                }
+                .scrollContentBackground(.hidden)
+            }
         }
-        .scrollContentBackground(.hidden)
         .background(Theme.background)
     }
 }
@@ -26,9 +35,17 @@ struct SpeakerRow: View {
             .frame(width: 52, height: 52)
             .clipShape(Circle())
 
-            Text(speaker.name)
-                .font(.headline)
-                .foregroundStyle(Theme.ink)
+            VStack(alignment: .leading, spacing: 3) {
+                Text(speaker.name)
+                    .font(.headline)
+                    .foregroundStyle(Theme.ink)
+                if !speaker.tagline.isEmpty {
+                    Text(speaker.tagline)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .lineLimit(2)
+                }
+            }
         }
         .padding(.vertical, 6)
     }

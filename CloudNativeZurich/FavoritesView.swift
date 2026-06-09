@@ -1,11 +1,12 @@
 import SwiftUI
 
 struct FavoritesView: View {
-    let favoriteSessionIDs: Set<UUID>
+    let sessions: [Session]
+    let favoriteSessionIDs: Set<String>
     let toggleFavorite: (Session) -> Void
 
     private var favorites: [Session] {
-        ConferenceData.sessions.filter { favoriteSessionIDs.contains($0.id) }
+        sessions.filter { favoriteSessionIDs.contains($0.id) }
     }
 
     var body: some View {

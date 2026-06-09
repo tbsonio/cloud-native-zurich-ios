@@ -1,16 +1,23 @@
 import SwiftUI
 
 struct ScheduleView: View {
+    let sessions: [Session]
+    let isLoading: Bool
+    let errorMessage: String?
     @Binding var selectedTrack: Track?
     @Binding var searchText: String
-    let favoriteSessionIDs: Set<UUID>
+    let favoriteSessionIDs: Set<String>
     let toggleFavorite: (Session) -> Void
 
-    private var sessions: [Session] {
-        ConferenceData.sessions.filter { session in
+    private var filteredSessions: [Session] {
+        sessions.filter { session in
             let matchesTrack = selectedTrack == nil || session.track == selectedTrack
             let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
-            let matchesSearch = query.isEmpty || session.title.localizedCaseInsensitiveContains(query) || session.speakerLine.localizedCaseInsensitiveContains(query)
+            let matchesSearch = query.isEmpty
+                || session.title.localizedCaseInsensitiveContains(query)
+                || session.summary.localizedCaseInsensitiveContains(query)
+                || session.speakerLine.localizedCaseInsensitiveContains(query)
+                || session.categories.contains { $0.localizedCaseInsensitiveContains(query) }
             return matchesTrack && matchesSearch
         }
     }
@@ -23,7 +30,15 @@ struct ScheduleView: View {
                     HeroHeader()
                     TrackPicker(selectedTrack: $selectedTrack)
                     LazyVStack(spacing: 12) {
-                        ForEach(sessions) { session in
+                        if isLoading && sessions.isEmpty {
+                            ProgressView("Loading full Sessionize schedule...")
+                                .frame(maxWidth: .infinity)
+                                .padding(32)
+                        } else if let errorMessage, sessions.isEmpty {
+                            ContentUnavailableView("Schedule unavailable", systemImage: "wifi.exclamationmark", description: Text(errorMessage))
+                                .padding(.top, 40)
+                        }
+                        ForEach(filteredSessions) { session in
                             NavigationLink(value: session) {
                                 SessionCard(session: session, isFavorite: favoriteSessionIDs.contains(session.id), toggleFavorite: { toggleFavorite(session) })
                             }
@@ -50,7 +65,7 @@ private struct HeroHeader: View {
             Text("\(ConferenceData.eventDate) · \(ConferenceData.venue)")
                 .font(.headline)
                 .foregroundStyle(Theme.sea)
-            Text("Four tracks, 30 sessions, and a day built for platform, security, AI, and cloud native engineering.")
+            Text("Four tracks, every scheduled talk, and the full Sessionize speaker details for the Cloud Native Zurich conference day.")
                 .font(.body)
                 .foregroundStyle(.secondary)
         }
