@@ -3,19 +3,33 @@ import SwiftUI
 struct SpeakersView: View {
     let speakers: [Speaker]
     let isLoading: Bool
+    @State private var searchText = ""
+
+    private var filteredSpeakers: [Speaker] {
+        if searchText.isEmpty {
+            return speakers
+        } else {
+            return speakers.filter { speaker in
+                speaker.name.localizedCaseInsensitiveContains(searchText) ||
+                speaker.tagline.localizedCaseInsensitiveContains(searchText) ||
+                speaker.bio.localizedCaseInsensitiveContains(searchText)
+            }
+        }
+    }
 
     var body: some View {
         Group {
             if isLoading && speakers.isEmpty {
                 ProgressView("Loading speakers...")
             } else {
-                List(speakers) { speaker in
+                List(filteredSpeakers) { speaker in
                     SpeakerRow(speaker: speaker)
                 }
                 .scrollContentBackground(.hidden)
             }
         }
         .background(Theme.background)
+        .searchable(text: $searchText, prompt: "Search speakers")
     }
 }
 

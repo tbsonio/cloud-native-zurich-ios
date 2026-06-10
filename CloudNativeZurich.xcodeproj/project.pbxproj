@@ -16,6 +16,14 @@
 		4B72F53AED4DDA12FB35324B /* SpeakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0602C5068644F4D41F82C6A9 /* SpeakersView.swift */; };
 		79933ECAB042D52624AB1DCF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECAC2B52C4382E67BC041D /* Theme.swift */; };
 		8B44D95FFA26533D3D3E99AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51A83E48AF402109AF64E991 /* Assets.xcassets */; };
+		8C1B2C3D4E5F678901234567 /* Orbitron[wght].ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F678901234568 /* Orbitron[wght].ttf */; };
+		8C1B2C3D4E5F678901234568 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F678901234569 /* PixelOperator-Bold.ttf */; };
+		8C1B2C3D4E5F678901234569 /* PixelOperator.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456A /* PixelOperator.ttf */; };
+		8C1B2C3D4E5F67890123456A /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456B /* PlusJakartaSans-Bold.ttf */; };
+		8C1B2C3D4E5F67890123456B /* PlusJakartaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456C /* PlusJakartaSans-Medium.ttf */; };
+		8C1B2C3D4E5F67890123456C /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456D /* PlusJakartaSans-Regular.ttf */; };
+		8C1B2C3D4E5F67890123456D /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456E /* PlusJakartaSans-SemiBold.ttf */; };
+		8C1B2C3D4E5F67890123456E /* PlusJakartaSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456F /* PlusJakartaSans-SemiBoldItalic.ttf */; };
 		9CEC5D331E7DB2094A289D3F /* ConferenceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D88BEFAC2072A98998AD5F /* ConferenceData.swift */; };
 		B2A1C064D37786969DFF3F98 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33814631CC70ACF9BBC39225 /* Models.swift */; };
 		D68AD6DA94B02B413C9C8611 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62393EBDBE2F31CD165067B7 /* AppRootView.swift */; };
@@ -32,6 +40,15 @@
 		51A83E48AF402109AF64E991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62393EBDBE2F31CD165067B7 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
 		86D3FA26F4593C0CDDD1F9C2 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		8A1B2C3D4E5F678901234567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A1B2C3D4E5F678901234568 /* Orbitron[wght].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/Orbitron[wght].ttf"; sourceTree = "<group>"; };
+		8A1B2C3D4E5F678901234569 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
+		8A1B2C3D4E5F67890123456A /* PixelOperator.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PixelOperator.ttf"; sourceTree = "<group>"; };
+		8A1B2C3D4E5F67890123456B /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
+		8A1B2C3D4E5F67890123456C /* PlusJakartaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PlusJakartaSans-Medium.ttf"; sourceTree = "<group>"; };
+		8A1B2C3D4E5F67890123456D /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
+		8A1B2C3D4E5F67890123456E /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		8A1B2C3D4E5F67890123456F /* PlusJakartaSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PlusJakartaSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		B827D40AA0C733C9014F0352 /* CloudNativeZurich.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CloudNativeZurich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D88BEFAC2072A98998AD5F /* ConferenceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceData.swift; sourceTree = "<group>"; };
 		EC5413B853F53BE6273CE431 /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
@@ -47,6 +64,15 @@
 				C8D88BEFAC2072A98998AD5F /* ConferenceData.swift */,
 				314A300257CD6528FC58575C /* FavoritesView.swift */,
 				86D3FA26F4593C0CDDD1F9C2 /* InfoView.swift */,
+				8A1B2C3D4E5F678901234567 /* Info.plist */,
+				8A1B2C3D4E5F678901234568 /* Orbitron[wght].ttf */,
+				8A1B2C3D4E5F678901234569 /* PixelOperator-Bold.ttf */,
+				8A1B2C3D4E5F67890123456A /* PixelOperator.ttf */,
+				8A1B2C3D4E5F67890123456B /* PlusJakartaSans-Bold.ttf */,
+				8A1B2C3D4E5F67890123456C /* PlusJakartaSans-Medium.ttf */,
+				8A1B2C3D4E5F67890123456D /* PlusJakartaSans-Regular.ttf */,
+				8A1B2C3D4E5F67890123456E /* PlusJakartaSans-SemiBold.ttf */,
+				8A1B2C3D4E5F67890123456F /* PlusJakartaSans-SemiBoldItalic.ttf */,
 				33814631CC70ACF9BBC39225 /* Models.swift */,
 				0970DD72E030DE66EC0337E0 /* ScheduleView.swift */,
 				0FD45AA52392CC777BDBC73B /* SessionCard.swift */,
@@ -130,6 +156,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B44D95FFA26533D3D3E99AB /* Assets.xcassets in Resources */,
+				8C1B2C3D4E5F678901234567 /* Orbitron[wght].ttf in Resources */,
+				8C1B2C3D4E5F678901234568 /* PixelOperator-Bold.ttf in Resources */,
+				8C1B2C3D4E5F678901234569 /* PixelOperator.ttf in Resources */,
+				8C1B2C3D4E5F67890123456A /* PlusJakartaSans-Bold.ttf in Resources */,
+				8C1B2C3D4E5F67890123456B /* PlusJakartaSans-Medium.ttf in Resources */,
+				8C1B2C3D4E5F67890123456C /* PlusJakartaSans-Regular.ttf in Resources */,
+				8C1B2C3D4E5F67890123456D /* PlusJakartaSans-SemiBold.ttf in Resources */,
+				8C1B2C3D4E5F67890123456E /* PlusJakartaSans-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CloudNativeZurich/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -266,7 +300,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CloudNativeZurich/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

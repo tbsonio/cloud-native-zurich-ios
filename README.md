@@ -2,6 +2,24 @@
 
 A SwiftUI iOS schedule app inspired by the Cloud Native Zurich 2026 Sessionize app and the conference schedule page.
 
+## Color Palette
+
+The app uses a carefully designed color palette:
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Dark navy | `#0A1133` | Main text, headings, borders, icons |
+| White | `#FFFFFF` | Page and navigation backgrounds |
+| Very light cyan | `#EFFAFB` | Schedule cards and panels |
+| Light blue-gray | `#DFEFF2` | Buttons and hover backgrounds |
+| Selected blue-gray | `#D4E8EC` | Selected track tab |
+| Turquoise | `#06B3B8` | Links, hover states, active-session borders |
+| Bright blue | `#3333FF` | Links and blue accents |
+| Orange-red | `#F14600` | Highlight text, bullets and accents |
+| Pale orange | `#FFF4F0` | Orange-tinted backgrounds |
+| Peach | `#FCC5B1` | Decorative accents |
+| Medium gray | `#808080` | Loading and secondary text |
+
 ## Features
 
 - Schedule browsing for the 11 June 2026 conference day

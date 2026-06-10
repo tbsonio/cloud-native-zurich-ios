@@ -24,38 +24,64 @@ struct AppRootView: View {
                     toggleFavorite: toggleFavorite
                 )
                     .navigationTitle("Schedule")
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            Image("logo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 28, height: 28)
+                                .clipShape(Circle())
+                        }
+                    }
             }
             .tabItem { Label("Schedule", systemImage: "calendar") }
 
             NavigationStack {
                 FavoritesView(sessions: store.sessions, favoriteSessionIDs: favoriteSessionIDs, toggleFavorite: toggleFavorite)
                     .navigationTitle("Favorites")
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            Image("logo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 28, height: 28)
+                                .clipShape(Circle())
+                        }
+                    }
             }
             .tabItem { Label("Favorites", systemImage: "star") }
 
             NavigationStack {
                 SpeakersView(speakers: store.speakers, isLoading: store.isLoading)
                     .navigationTitle("Speakers")
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            Image("logo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 28, height: 28)
+                                .clipShape(Circle())
+                        }
+                    }
             }
             .tabItem { Label("Speakers", systemImage: "person.2") }
 
             NavigationStack {
                 InfoView()
                     .navigationTitle("Info")
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            Image("logo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 28, height: 28)
+                                .clipShape(Circle())
+                        }
+                    }
             }
             .tabItem { Label("Info", systemImage: "info.circle") }
         }
         .tint(Theme.ink)
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                if let logo = UIImage(named: "logo") {
-                    Image(uiImage: logo)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 36, height: 36)
-                }
-            }
-        }
         .task { await store.load() }
     }
 
