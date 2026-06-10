@@ -12,3 +12,6 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output/
 actions-runner/
+*.pbxproj.backup
+cloudnativezurich-fonts.zip
+cloudnativezurich-fonts/

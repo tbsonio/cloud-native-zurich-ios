@@ -63,10 +63,30 @@ The VS Code MCP configuration is in `.vscode/mcp.json` and registers the request
 
 ## Local Mac CI/CD
 
-The GitHub Actions workflow in `.github/workflows/ios-ci.yml` is configured for a self-hosted macOS runner. Once this repository exists on GitHub, register this Mac as the runner:
+The GitHub Actions workflow in `.github/workflows/ios-ci.yml` is configured for a self-hosted macOS runner. For this project, the runner is the hosted Mac provided by Flow Swiss. GitHub still coordinates the workflow, but the actual build runs on the Flow Swiss Mac, so Xcode, the iOS Simulator SDK, Homebrew, and signing/build caches stay local to that machine.
+
+How it works:
+
+- A push to `main`, a pull request, or a manual `workflow_dispatch` starts the `iOS CI` workflow in GitHub Actions.
+- The workflow asks GitHub for a runner matching `self-hosted` and `macOS`.
+- The Flow Swiss hosted Mac runs the GitHub Actions runner service and advertises the labels `self-hosted`, `macOS`, `ios`, and `xcode`.
+- GitHub sends the job to that Mac. The runner checks out the repository, installs XcodeGen if needed, regenerates `CloudNativeZurich.xcodeproj`, and runs the simulator build.
+- Because the runner is installed as a macOS service, it starts automatically after the machine reboots and keeps listening for new jobs.
+
+The runner can be installed or reinstalled with:
 
 ```bash
 scripts/install-github-runner.sh tbsonio cloud-native-zurich-ios
 ```
 
-After the runner service is installed, every push to `main` will build the app on this Mac.
+The script uses the authenticated GitHub CLI session to request a short-lived repository runner registration token, downloads the official macOS arm64 GitHub Actions runner, configures it under `~/actions-runner-cloud-native-zurich-ios`, and starts it via `svc.sh`.
+
+Useful checks on the Flow Swiss Mac:
+
+```bash
+gh run list --repo tbsonio/cloud-native-zurich-ios --workflow "iOS CI" --limit 5
+ps aux | grep '[R]unner.Listener'
+~/actions-runner-cloud-native-zurich-ios/svc.sh status
+```
+
+After the runner service is installed, every push to `main` builds the app on the hosted Mac automatically.
