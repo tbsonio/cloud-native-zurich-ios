@@ -7,50 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0443C65B19AA71D40163C506 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7FED182659B59B7AB80FB23 /* PixelOperator-Bold.ttf */; };
 		0F07424F4836CD11E8E1954E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D3FA26F4593C0CDDD1F9C2 /* InfoView.swift */; };
+		0F33531AEDCB5C78317F06EA /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3284674A845BCA7013CAED5F /* PlusJakartaSans-Regular.ttf */; };
+		1541FD8886ABEC131BFAB10A /* PlusJakartaSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 819AAF3BC9BF0A05B661C07B /* PlusJakartaSans-SemiBoldItalic.ttf */; };
 		1814A718C4F5194508B43C41 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314A300257CD6528FC58575C /* FavoritesView.swift */; };
 		1B234DD49892589FDE687CF6 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0970DD72E030DE66EC0337E0 /* ScheduleView.swift */; };
+		284428E24785F42BCD315ED3 /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C09AE214E2F97121A4D6A74 /* PlusJakartaSans-SemiBold.ttf */; };
 		3025A0AD3624E3354FEA01BF /* SessionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD45AA52392CC777BDBC73B /* SessionCard.swift */; };
 		3FDDFF16743932D8B2575F1A /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5413B853F53BE6273CE431 /* SessionDetailView.swift */; };
 		442D3DF54D5F029D74EE75EA /* CloudNativeZurichApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4470BB5C1FCC131D804D052D /* CloudNativeZurichApp.swift */; };
 		4B72F53AED4DDA12FB35324B /* SpeakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0602C5068644F4D41F82C6A9 /* SpeakersView.swift */; };
+		54E69D1582FFC5055C77324B /* PixelOperator.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDCF039145BDBAF49EAE4D75 /* PixelOperator.ttf */; };
 		79933ECAB042D52624AB1DCF /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECAC2B52C4382E67BC041D /* Theme.swift */; };
+		7D53D334E8BBDF2D7091A6AE /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B6FB2568E2C0A17BD34CD516 /* LICENSE.txt */; };
 		8B44D95FFA26533D3D3E99AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51A83E48AF402109AF64E991 /* Assets.xcassets */; };
-		8C1B2C3D4E5F678901234567 /* Orbitron[wght].ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F678901234568 /* Orbitron[wght].ttf */; };
-		8C1B2C3D4E5F678901234568 /* PixelOperator-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F678901234569 /* PixelOperator-Bold.ttf */; };
-		8C1B2C3D4E5F678901234569 /* PixelOperator.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456A /* PixelOperator.ttf */; };
-		8C1B2C3D4E5F67890123456A /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456B /* PlusJakartaSans-Bold.ttf */; };
-		8C1B2C3D4E5F67890123456B /* PlusJakartaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456C /* PlusJakartaSans-Medium.ttf */; };
-		8C1B2C3D4E5F67890123456C /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456D /* PlusJakartaSans-Regular.ttf */; };
-		8C1B2C3D4E5F67890123456D /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456E /* PlusJakartaSans-SemiBold.ttf */; };
-		8C1B2C3D4E5F67890123456E /* PlusJakartaSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1B2C3D4E5F67890123456F /* PlusJakartaSans-SemiBoldItalic.ttf */; };
+		9C49F261AF2A4B6445BED53E /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3971145FF772F90FF5556FD7 /* OFL.txt */; };
 		9CEC5D331E7DB2094A289D3F /* ConferenceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D88BEFAC2072A98998AD5F /* ConferenceData.swift */; };
 		B2A1C064D37786969DFF3F98 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33814631CC70ACF9BBC39225 /* Models.swift */; };
+		D2C20C9BFE3417291ECE9384 /* Orbitron[wght].ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB2CE63E617F1C942F4388AB /* Orbitron[wght].ttf */; };
 		D68AD6DA94B02B413C9C8611 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62393EBDBE2F31CD165067B7 /* AppRootView.swift */; };
+		E79849B015B7412B8F98D4E2 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10678F0DB37C954EAF495638 /* PlusJakartaSans-Bold.ttf */; };
+		FCBBE5439D265D2C41969AA8 /* PlusJakartaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB3BB97ABBDF643E3A678DAC /* PlusJakartaSans-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0602C5068644F4D41F82C6A9 /* SpeakersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakersView.swift; sourceTree = "<group>"; };
 		0970DD72E030DE66EC0337E0 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		0C09AE214E2F97121A4D6A74 /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		0FD45AA52392CC777BDBC73B /* SessionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCard.swift; sourceTree = "<group>"; };
+		10678F0DB37C954EAF495638 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
 		18ECAC2B52C4382E67BC041D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		314A300257CD6528FC58575C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		3284674A845BCA7013CAED5F /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
 		33814631CC70ACF9BBC39225 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		3971145FF772F90FF5556FD7 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		4470BB5C1FCC131D804D052D /* CloudNativeZurichApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNativeZurichApp.swift; sourceTree = "<group>"; };
 		51A83E48AF402109AF64E991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62393EBDBE2F31CD165067B7 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		819AAF3BC9BF0A05B661C07B /* PlusJakartaSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		858F752F1EF87243420ED771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		86D3FA26F4593C0CDDD1F9C2 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		8A1B2C3D4E5F678901234567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A1B2C3D4E5F678901234568 /* Orbitron[wght].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/Orbitron[wght].ttf"; sourceTree = "<group>"; };
-		8A1B2C3D4E5F678901234569 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
-		8A1B2C3D4E5F67890123456A /* PixelOperator.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PixelOperator.ttf"; sourceTree = "<group>"; };
-		8A1B2C3D4E5F67890123456B /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
-		8A1B2C3D4E5F67890123456C /* PlusJakartaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PlusJakartaSans-Medium.ttf"; sourceTree = "<group>"; };
-		8A1B2C3D4E5F67890123456D /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
-		8A1B2C3D4E5F67890123456E /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		8A1B2C3D4E5F67890123456F /* PlusJakartaSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fonts/PlusJakartaSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		AB2CE63E617F1C942F4388AB /* Orbitron[wght].ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron[wght].ttf"; sourceTree = "<group>"; };
+		B6FB2568E2C0A17BD34CD516 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		B7FED182659B59B7AB80FB23 /* PixelOperator-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PixelOperator-Bold.ttf"; sourceTree = "<group>"; };
 		B827D40AA0C733C9014F0352 /* CloudNativeZurich.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CloudNativeZurich.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDCF039145BDBAF49EAE4D75 /* PixelOperator.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelOperator.ttf; sourceTree = "<group>"; };
 		C8D88BEFAC2072A98998AD5F /* ConferenceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceData.swift; sourceTree = "<group>"; };
+		DB3BB97ABBDF643E3A678DAC /* PlusJakartaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Medium.ttf"; sourceTree = "<group>"; };
 		EC5413B853F53BE6273CE431 /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,24 +67,27 @@
 				4470BB5C1FCC131D804D052D /* CloudNativeZurichApp.swift */,
 				C8D88BEFAC2072A98998AD5F /* ConferenceData.swift */,
 				314A300257CD6528FC58575C /* FavoritesView.swift */,
+				858F752F1EF87243420ED771 /* Info.plist */,
 				86D3FA26F4593C0CDDD1F9C2 /* InfoView.swift */,
-				8A1B2C3D4E5F678901234567 /* Info.plist */,
-				8A1B2C3D4E5F678901234568 /* Orbitron[wght].ttf */,
-				8A1B2C3D4E5F678901234569 /* PixelOperator-Bold.ttf */,
-				8A1B2C3D4E5F67890123456A /* PixelOperator.ttf */,
-				8A1B2C3D4E5F67890123456B /* PlusJakartaSans-Bold.ttf */,
-				8A1B2C3D4E5F67890123456C /* PlusJakartaSans-Medium.ttf */,
-				8A1B2C3D4E5F67890123456D /* PlusJakartaSans-Regular.ttf */,
-				8A1B2C3D4E5F67890123456E /* PlusJakartaSans-SemiBold.ttf */,
-				8A1B2C3D4E5F67890123456F /* PlusJakartaSans-SemiBoldItalic.ttf */,
 				33814631CC70ACF9BBC39225 /* Models.swift */,
 				0970DD72E030DE66EC0337E0 /* ScheduleView.swift */,
 				0FD45AA52392CC777BDBC73B /* SessionCard.swift */,
 				EC5413B853F53BE6273CE431 /* SessionDetailView.swift */,
 				0602C5068644F4D41F82C6A9 /* SpeakersView.swift */,
 				18ECAC2B52C4382E67BC041D /* Theme.swift */,
+				0E28470AE2A8E613B84852D0 /* Fonts */,
 			);
 			path = CloudNativeZurich;
+			sourceTree = "<group>";
+		};
+		0E28470AE2A8E613B84852D0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8306A3E3148F6928E46BA181 /* Orbitron */,
+				9ED4D4A91533BB5CB92CFFB4 /* Pixel-Operator */,
+				67002FA19AF849B18FFADCE0 /* Plus-Jakarta-Sans */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		221E61A77BE402CBE6267B40 /* Products */ = {
@@ -91,12 +98,43 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		67002FA19AF849B18FFADCE0 /* Plus-Jakarta-Sans */ = {
+			isa = PBXGroup;
+			children = (
+				3971145FF772F90FF5556FD7 /* OFL.txt */,
+				10678F0DB37C954EAF495638 /* PlusJakartaSans-Bold.ttf */,
+				DB3BB97ABBDF643E3A678DAC /* PlusJakartaSans-Medium.ttf */,
+				3284674A845BCA7013CAED5F /* PlusJakartaSans-Regular.ttf */,
+				0C09AE214E2F97121A4D6A74 /* PlusJakartaSans-SemiBold.ttf */,
+				819AAF3BC9BF0A05B661C07B /* PlusJakartaSans-SemiBoldItalic.ttf */,
+			);
+			path = "Plus-Jakarta-Sans";
+			sourceTree = "<group>";
+		};
+		8306A3E3148F6928E46BA181 /* Orbitron */ = {
+			isa = PBXGroup;
+			children = (
+				AB2CE63E617F1C942F4388AB /* Orbitron[wght].ttf */,
+			);
+			path = Orbitron;
+			sourceTree = "<group>";
+		};
 		850EA3CAD5ECB1CB603B7A34 = {
 			isa = PBXGroup;
 			children = (
 				0BDD9A748B740DCFEE000CDA /* CloudNativeZurich */,
 				221E61A77BE402CBE6267B40 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		9ED4D4A91533BB5CB92CFFB4 /* Pixel-Operator */ = {
+			isa = PBXGroup;
+			children = (
+				B6FB2568E2C0A17BD34CD516 /* LICENSE.txt */,
+				B7FED182659B59B7AB80FB23 /* PixelOperator-Bold.ttf */,
+				BDCF039145BDBAF49EAE4D75 /* PixelOperator.ttf */,
+			);
+			path = "Pixel-Operator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,14 +194,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B44D95FFA26533D3D3E99AB /* Assets.xcassets in Resources */,
-				8C1B2C3D4E5F678901234567 /* Orbitron[wght].ttf in Resources */,
-				8C1B2C3D4E5F678901234568 /* PixelOperator-Bold.ttf in Resources */,
-				8C1B2C3D4E5F678901234569 /* PixelOperator.ttf in Resources */,
-				8C1B2C3D4E5F67890123456A /* PlusJakartaSans-Bold.ttf in Resources */,
-				8C1B2C3D4E5F67890123456B /* PlusJakartaSans-Medium.ttf in Resources */,
-				8C1B2C3D4E5F67890123456C /* PlusJakartaSans-Regular.ttf in Resources */,
-				8C1B2C3D4E5F67890123456D /* PlusJakartaSans-SemiBold.ttf in Resources */,
-				8C1B2C3D4E5F67890123456E /* PlusJakartaSans-SemiBoldItalic.ttf in Resources */,
+				7D53D334E8BBDF2D7091A6AE /* LICENSE.txt in Resources */,
+				9C49F261AF2A4B6445BED53E /* OFL.txt in Resources */,
+				D2C20C9BFE3417291ECE9384 /* Orbitron[wght].ttf in Resources */,
+				0443C65B19AA71D40163C506 /* PixelOperator-Bold.ttf in Resources */,
+				54E69D1582FFC5055C77324B /* PixelOperator.ttf in Resources */,
+				E79849B015B7412B8F98D4E2 /* PlusJakartaSans-Bold.ttf in Resources */,
+				FCBBE5439D265D2C41969AA8 /* PlusJakartaSans-Medium.ttf in Resources */,
+				0F33531AEDCB5C78317F06EA /* PlusJakartaSans-Regular.ttf in Resources */,
+				284428E24785F42BCD315ED3 /* PlusJakartaSans-SemiBold.ttf in Resources */,
+				1541FD8886ABEC131BFAB10A /* PlusJakartaSans-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +282,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = CloudNativeZurich/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -300,7 +339,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = CloudNativeZurich/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -318,10 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_KEY_CFBundleDisplayName = "Cloud Native Zurich";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_FILE = CloudNativeZurich/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,10 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_KEY_CFBundleDisplayName = "Cloud Native Zurich";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_FILE = CloudNativeZurich/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
