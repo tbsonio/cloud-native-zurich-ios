@@ -46,6 +46,16 @@ struct AppRootView: View {
             .tabItem { Label("Info", systemImage: "info.circle") }
         }
         .tint(Theme.ink)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                if let logo = UIImage(named: "logo") {
+                    Image(uiImage: logo)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 36, height: 36)
+                }
+            }
+        }
         .task { await store.load() }
     }
 
